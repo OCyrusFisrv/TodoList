@@ -1,0 +1,9 @@
+/*
+
+Add a task
+Edit a task
+Mark tasks as done
+Delete a task
+Clear all tasks
+
+*/
