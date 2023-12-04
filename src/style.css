@@ -1,4 +1,16 @@
 /* Basic Style */
+body.dark-mode {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    color: #fff;
+}
 
 body {
 

@@ -1,3 +1,4 @@
+
 /*
 
 Add a task
@@ -117,4 +118,28 @@ document.addEventListener('DOMContentLoaded', function () {
     clearButton.addEventListener('click', function () {
         completedTasks.innerHTML = '';
     });
+
+    //dark mode toggle
+    // Get the dark mode switch and the body element
+const darkModeSwitch = document.getElementById('dark-mode-switch');
+const body = document.body;
+
+// Function to toggle dark mode
+function toggleDarkMode() {
+    body.classList.toggle('dark-mode');
+}
+
+// Event listener for the dark mode switch
+darkModeSwitch.addEventListener('change', function () {
+    toggleDarkMode();
+    // Save user preference in local storage
+    localStorage.setItem('darkMode', darkModeSwitch.checked);
+});
+
+// Check user preference from local storage on page load
+if (localStorage.getItem('darkMode') === 'true') {
+    darkModeSwitch.checked = true;
+    toggleDarkMode();
+}
+
 });
